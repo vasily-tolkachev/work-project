@@ -8409,6 +8409,30 @@ body::before {
   margin: 0;
   color: black; }
 
+.contact-us {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff; }
+
+.contact-us-subtitle {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px; }
+
+.contact-us-block {
+  display: block; }
+
+.contact-us-color {
+  color: #FECC93; }
+
+.dealer-image {
+  margin: 0 auto 30px auto; }
+
+.dealer-block-heading span {
+  color: #FF863B; }
+
 @media (min-width: 768px){
   .container{
     width: 750px; }
@@ -8630,7 +8654,12 @@ body::before {
   .modal-title{
     font-size: 32px; }
   .manufacturer-list-first{
-    float: 300px; } }
+    float: 300px; }
+  .contact-us{
+    font-size: 38px;
+    line-height: 48px; }
+  .dealer-image{
+    margin: 0 auto; } }
 
 @media (min-width: 992px){
   .container{
@@ -8751,7 +8780,11 @@ body::before {
     margin-right: 30px;
     margin-left: 30px; }
   .certificate .certificate-img:hover:after{
-    opacity: 1; } }
+    opacity: 1; }
+  .contact-us-wrapper{
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0 auto; } }
 
 @media (min-width: 1200px){
   .container{
