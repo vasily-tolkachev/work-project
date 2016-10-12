@@ -113,7 +113,7 @@
 										<li>Системы контроля доступа</li>
 									</ul>
 									<div class="btn-wrapper .col-lg-12 col-md-12 col-sm-12">
-										<a href="#" class="btn btn-black">Заказать оборудование</a>
+										<a id="hostcall-btn" href="#modal-consult" data-toggle="modal" data-backdrop="static" class="btn btn-black" >Заказать оборудование</a>
 									</div>
 								</div>
 
@@ -142,7 +142,7 @@
 										<li>Система вызова помощи</li>
 									</ul>
 									<div class="btn-wrapper .col-lg-12 col-md-12 col-sm-12">
-										<a href="#" class="btn btn-black">Заказать оборудование</a>
+										<a id="medbells-btn" href="#modal-consult" data-toggle="modal" data-backdrop="static" class="btn btn-black">Заказать оборудование</a>
 									</div>
 								</div>
 							</div>
@@ -168,7 +168,7 @@
 										<li>Система вызова пациента в кабинет врача</li>
 									</ul>
 									<div class="btn-wrapper .col-lg-12 col-md-12 col-sm-12">
-										<a href="#" class="btn btn-black">Заказать оборудование</a>
+										<a id="medbeep-btn" href="#modal-consult" data-toggle="modal" data-backdrop="static" class="btn btn-black">Заказать оборудование</a>
 									</div>
 								</div>
 							</div>
@@ -194,7 +194,7 @@
 										<li>Системы вызова помощника</li>
 									</ul>
 									<div class="btn-wrapper .col-lg-12 col-md-12 col-sm-12">
-										<a href="#" class="btn btn-black">Заказать оборудование</a>
+										<a id="pulsar-btn" href="#modal-consult" data-toggle="modal" data-backdrop="static" class="btn btn-black">Заказать оборудование</a>
 									</div>
 								</div>
 							</div>
@@ -204,13 +204,13 @@
 			</div>
 		</section>
 
-		<section class="contact-us padding-top-3x padding-bottom-3x fw-section parallax-bg text-center text-light" style="background-image: url(img/contact-us-background.png);" id="section-certificate">
+		<section class="contact-us padding-top-3x padding-bottom-3x fw-section parallax-bg text-center text-light" style="background-image: url(img/startup-photos.jpg);" id="section-certificate">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="contact-us-wrapper">
 					<p class="contact-us-title"><span class="contact-us-block">Свяжитесь с&nbsp;нами</span> и&nbsp;мы&nbsp;подберём подходящее оборудование <span class="contact-us-color">со&nbsp;скидкой 10%</span> прямо сейчас!</p>
 					<p class="contact-us-subtitle hidden-xs">Посоветуем оптимальное решение и сэкономим ваше время</p>
-					<a class = "btn btn-warning" href="#">Заказать со&nbsp;скидкой 10%</a>
+					<a class = "btn btn-warning" href="#modal-consult" data-toggle="modal" data-backdrop="static">Заказать со&nbsp;скидкой 10%</a>
 				</div>
 			</div>
 		</section>
@@ -218,19 +218,14 @@
 		<section class="dealer fw-section gray-bg padding-top-3x padding-bottom-3x mobile-center">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-md-10">
-						<div class="block-title">
-							<h2 class="block-title-heading">Как официальный дилер мы&nbsp;предлагаем:</h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
 					<div class="col-xs-12 col-sm-4 col-sm-push-8">
-						<img class="dealer-image" src="img/icons/icon-boxes.svg" width="238" height="287" alt="Склад">
+						<img class="dealer-image dealer-image-first" src="img/icons/icon-boxes.svg" width="238" height="287" alt="Склад">
 					</div>
 					<div class="col-xs-12 col-sm-8 col-sm-pull-4">
 						<div class="row">
+							<div class="block-title">
+								<h2 class="block-title-heading">Как официальный дилер мы&nbsp;предлагаем:</h2>
+							</div>
 							<div class="col-xs-12 col-sm-6">
 								<section class="dealer-block">
 									<h3 class="dealer-block-heading">Низкие розничные цены + <span>скидка на&nbsp;объем!</span></h3>
@@ -244,6 +239,32 @@
 								</section>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="padding-top-3x row">
+					<div class="col-xs-12 col-sm-4">
+						<img class="dealer-image" src="img/icons/shield.svg" width="205" height="242" alt="Знак надежности">
+					</div>
+					<div class="col-xs-12 col-sm-8">
+						<div class="block-title">
+							<h2 class="block-title-heading">Гарантийное обслуживание</h2>
+						</div>
+						<ul class="dealer-list">
+							<li>
+								<span class="number"></span>
+								<div class="dealer-block">
+									<h3 class="dealer-block-heading">Консультируем по&nbsp;установке</h3>
+									<p>Как официальный дилер мы&nbsp;разбираемся в&nbsp;настройке и&nbsp;установке аппаратуры, с&nbsp;радостью вам поможем!</p>
+								</div>
+							</li>
+							<li>
+								<span class="number"></span>
+								<div class="dealer-block">
+									<h3 class="dealer-block-heading">Обеспечим гарантию от&nbsp;1 года</h3>
+									<p>На&nbsp;всю продукцию действует гарантия от&nbsp;1 года с&nbsp;момента продажи. В&nbsp;случае повреждений или неисправности аппаратуры, мы&nbsp;лично все заменим, вам не&nbsp;придётся иметь дело с&nbsp;сервисным центром.</p>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -399,15 +420,16 @@
 					<div class="hidden-xs col-sm-6 col-md-7 col-lg-8">
 						<a href="index.html" class="logo footer-logo clearfix">
 							<img src="img/icons/logo-white.svg" alt="logo">
-							<span class="logo-text">Системы вызова персонала</span>
+							<span class="logo-text">Профессиональные системы связи и&nbsp;вызова персонала</span>
 						</a>
 						<div class="row text-uppercase">
 							<div class="col-sm-6 col-md-4">
 								<div class="widget widget_pages">
 									<ul>
-										<li><a href="#section-catalog" class="scroll-to">Коплекты Hostcall</a></li>
-										<li><a href="#section-certificate" class="scroll-to">Сертификаты</a></li>
-										<li><a href="#section-transport" class="scroll-to">Доставка</a></li>
+										<li><a href="#" class="scroll-to">Системы Hostcall</a></li>
+										<li><a href="#" class="scroll-to">Системы Medbells</a></li>
+										<li><a href="#" class="scroll-to">Системы Medbeep</a></li>
+										<li><a href="#" class="scroll-to">Системы Пульсар</a></li>
 									</ul>
 								</div>
 							</div>
@@ -415,16 +437,17 @@
 								<div class="widget widget_pages">
 									<ul>
 										<li><a href="#section-features" class="scroll-to">Наши преимущества</a></li>
+										<li><a href="#section-certificate" class="scroll-to">Сертификаты</a></li>
+										<li><a href="#section-transport" class="scroll-to">Доставка</a></li>
 										<li><a href="#section-partners" class="scroll-to">Наши клиенты</a></li>
 									</ul>
 								</div>
 							</div>
-						</div>						
+						</div>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
 						<div class="footer-contacts">
 							<p class="footer-contacts-item"><span class="text-uppercase">Тел./Факс:</span> <a class="footer-contacts-tel" href="tel:+74959889914">+7 (495) 988-99-14</a></p>
-							<p class="footer-contacts-item text-uppercase">Email: <a href="mailto:info@mantenna.ru">info@mantenna.ru</a></p>
 							<p class="footer-contacts-item"><span class="text-uppercase">Адрес:</span> <span class="footer-contacts-address">129626, г. Москва<br>ул. 3-я Мытищинская, дом 3, стр. 1, офис&nbsp;№&nbsp;1010</span></p>
 						</div>
 					</div>
@@ -449,7 +472,7 @@
 					</span>
 					<div class="modal-heading text-left">
 						<h1 class="modal-title" id="modalConsultLabel">Оставьте ваши контакты</h1>
-						<p>Мы посчитаем стоимость вашего заказа и перезвоним через 1 минуту!</p>
+						<p>Мы&nbsp;перезвоним через 1&nbsp;минуту, поможем с&nbsp;выбором и&nbsp;посчитаем стоимость заказа с&nbsp;учетом скидки 10%</p>
 					</div>
 				</div>
 				<div class="modal-body">
@@ -468,19 +491,18 @@
 									<div class="input-group">
 										<div class="input-group-addon">+7</div>
 										<input type="tel" id="consultFormTel" class="form-control input-alt parsley-field parsley-field-tel" data-parsley-required data-parsley-errors-messages-disabled data-parsley-type="digits">
-									</div>		        			
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="form-group">	        	
+						<div class="form-group">
 							<input type="email" class="form-control input-alt parsley-field parsley-field-email" placeholder="E-mail" data-parsley-required data-parsley-errors-messages-disabled data-parsley-type="email">
 						</div>
 						<div class="form-group">
-							<label for="consultFormTextarea">Если у вас есть список необходимой аппаратуры — укажите его:</label>
-							<textarea rows="6" class="form-control input-alt consult-form-textarea" id="consultFormTextarea" placeholder="Впишите список"></textarea>
+							<textarea rows="6" class="form-control input-alt consult-form-textarea" id="consultFormTextarea" placeholder="Комментарий"></textarea>
 							<div class="consult-form-file">
 								<div class="consult-form-file-blank">
-									<span class="consult-form-file-text">Или приложите файл</span>
+									<span class="consult-form-file-text">Вы можете приложить файл</span>
 									<label class="btn btn-alt btn-sm consult-form-file-btn">
 										<svg class="form-file-icon" width="14" height="14">
 											<use xlink:href="#icon-attach"></use>
@@ -532,13 +554,14 @@
 		</div>
 	</div>
 
-	<script src="js/vendor/jquery-2.1.4.min.js"></script>
-	<script src="js/vendor/placeholder.js"></script>
-	<script src="js/vendor/bootstrap.js"></script>
-	<script src="js/vendor/velocity.min.js"></script>
-	<script src="js/vendor/parsley.min.js"></script>
-	<script src="js/vendor/magnific-popup.min.js"></script>
-	<script src='js/widget.js'></script>
-	<script src="js/scripts.js"></script>
+<script src="js/vendor/jquery-2.1.4.min.js"></script>
+<script src="js/vendor/placeholder.js"></script>
+<script src="js/vendor/bootstrap.js"></script>
+<script src="js/vendor/velocity.min.js"></script>
+<script src="js/vendor/parsley.min.js"></script>
+<script src="js/vendor/magnific-popup.min.js"></script>
+<script src='js/widget.js'></script>
+<script src="js/scripts.js"></script>
+<script src="js/autocomplete.js"></script>
 </body>
 </html>
