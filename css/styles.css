@@ -8466,9 +8466,6 @@ body::before {
   color: #ffffff;
   padding-top: 70px;
   padding-bottom: 70px; }
-  .contact-us .btn {
-    padding-left: 65px;
-    padding-right: 65px; }
 
 .contact-us-title {
   display: block; }
@@ -8488,37 +8485,35 @@ body::before {
 body {
   min-width: 320px; }
 
-.dealer .first-block {
-  padding-left: 0; }
-
-.dealer-block p {
-  margin-bottom: 0; }
-
-.dealer-image-wrapper {
-  display: block;
-  position: relative; }
-
 .dealer-image {
   margin: 0 auto 30px auto; }
 
-.dealer-image-first {
-  width: 239px;
-  height: 287px; }
+.dealer-title-block {
+  display: block; }
 
 .dealer-block-heading span {
   color: #FF863B; }
 
+.dealer-block {
+  margin-bottom: 40px; }
+
+.dealer-wrapper {
+  box-sizing: border-box;
+  max-width: 440px;
+  margin: 0 auto; }
+
 .dealer-list {
   display: block;
   border-bottom: none;
-  padding-left: 25px; }
+  padding-left: 25px;
+  text-align: left; }
 
 .dealer-list > li {
   position: relative;
   display: block;
   width: 100%;
   margin-bottom: 0;
-  padding-left: 50px;
+  padding-left: 35px;
   border-left: 1px solid #232323;
   padding-bottom: 36px; }
 
@@ -8869,7 +8864,14 @@ body {
   .contact-us-block-second{
     display: block; }
   .dealer-image{
-    margin: 0 auto; }
+    margin-bottom: 0;
+    max-width: 90%; }
+  .dealer-image-first{
+    margin-top: 20px;
+    max-width: 210px; }
+  .dealer-wrapper{
+    margin: 0;
+    max-width: none; }
   .logo{
     width: 260px; }
   .logo .logo-text{
@@ -9030,6 +9032,9 @@ body {
   .contact-us{
     padding-top: 185px;
     padding-bottom: 135px; }
+  .contact-us .btn{
+    padding-left: 65px;
+    padding-right: 65px; }
   .contact-us-title{
     margin-bottom: 20px; }
   .contact-us-subtitle{
@@ -9039,7 +9044,12 @@ body {
   .contact-us-wrapper{
     box-sizing: border-box;
     width: 800px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .dealer-image-first{
+    max-width: none;
+    margin-top: 0; }
+  .device-slider .container{
+    margin-bottom: 30px; } }
     @media (min-width: 1200px){
   .container{
     width: 1170px; }
@@ -9166,7 +9176,11 @@ body {
     display: none !important; }
   .manufacturer-list-column{
     width: 370px;
-    float: left; } }
+    float: left; }
+  .dealer-image-first{
+    margin-top: -80px; }
+  .device-slider .container{
+    margin-bottom: 20px; } }
     @media screen and (-webkit-min-device-pixel-ratio: 0){
   input[type="date"].form-control,
   input[type="time"].form-control,
@@ -9966,9 +9980,9 @@ body {
     padding: 10px; }
   .partners-widget{
     overflow-x: scroll; }
-  .dealer-image-first{
-    width: 210px;
-    height: 230px; }
+  .dealer-image{
+    width: 200px;
+    height: 200px; }
   .device-slider .block-title{
     margin-top: 70px; } }
     @media (min-width: 1024px){
